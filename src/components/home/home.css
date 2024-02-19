@@ -1,0 +1,134 @@
+.home {
+    background: url(../../assets/fondo.png) no-repeat center;
+    background-size: cover;
+
+}
+
+.home__content {
+    grid-template-columns: 391px repeat(1, 10fr);
+    padding-top: 15rem;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 6rem;
+}
+
+.home__img {
+    background: url(../../assets/img-home.png) no-repeat center fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(199 0 253 / 25%);
+    order: 1;
+    width: 300px;
+    height: 300px;
+    animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+
+.home__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__img {
+    background: url(../../assets/img-home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.home__title {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.82);
+}
+
+.button {
+    width: 15rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: row;
+    gap: 9px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    background: #F2C50C;
+}
+
+.button-home {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.516);
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.home__container-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.home__social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 9px;
+}
+
+.home__social-icon {
+    background: black;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF;
+}
+
+/* ---breackpoints--- */
+/* for large devices */
+@media screen and (max-width: 992px) {
+
+    .home {
+        width: auto
+    }
+
+    .home__content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+/* for medium devices */
+@media screen and (max-width: 768px) {}
+
+/* for small devices */
+@media screen and (max-width: 350px) {}
