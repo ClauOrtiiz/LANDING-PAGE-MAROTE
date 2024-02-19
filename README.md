@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -9,3 +10,7 @@ Currently, two official plugins are available:
 
 # COFSOFT-LANDING-PAGE
  Web Development internship
+=======
+# LANDING-PAGE-MAROTE
+ 
+>>>>>>> 069241acbf16f79cc5931c20c1df0cff803ab1f2
